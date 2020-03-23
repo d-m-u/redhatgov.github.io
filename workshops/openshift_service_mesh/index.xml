@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OpenShift Service Mesh on Red Hat | Public Sector</title>
+    <link>http://redhatgov.io/workshops/openshift_service_mesh/</link>
+    <description>Recent content in OpenShift Service Mesh on Red Hat | Public Sector</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://redhatgov.io/workshops/openshift_service_mesh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Adding a New Service</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab2.2_deployuserprofile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab2.2_deployuserprofile/</guid>
+      <description>Adding a New Service to the Mesh You built the user profile service and now you need to deploy it into the service mesh.
+Deploy Application   Navigate to the workshop directory:  cd $HOME/openshift-microservices/deployment/workshop  The deployment file &#39;userprofile-deploy-all.yaml&#39; was created for you to deploy the application. The file creates the user profile service and an accompanying PostgreSQL database. Similar to the other source files, an annotation &#39;sidecar.</description>
+    </item>
+    
+    <item>
+      <title>Auth Policy</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab5.3_authpolicy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab5.3_authpolicy/</guid>
+      <description>Authorizing and Authenticating Access via Policy In the previous labs we secured and verified the service-to-service communication. But what about user-to-service communication (aka origin authentication)? The service mesh can help with that too. To do this, we need to bring in an identity provider that will issue JSON Web Tokens (JWTs) to signed in users. JWTs are an open, industry standard (RFC 7519) way of sharing identity. The app-ui service will pass those JWTs along with it&#39;s API requests.</description>
+    </item>
+    
+    <item>
+      <title>Building a Microservice</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab2.1_userprofile/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab2.1_userprofile/</guid>
+      <description>Building a Microservice   In the browser, navigate to the &#39;Profile&#39; section in the header.   If you lost the URL, you can retrieve it via:
+echo $GATEWAY_URL
+
+You should see the following:
+ Unknown Profile Page
+The UI shows an unknown user and that&#39;s because there&#39;s no profile service for your application. You are going to build a new microservice for user profiles and add this to your service mesh.</description>
+    </item>
+    
+    <item>
+      <title>Circuit Breaking</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab4.4_circuitbreaking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab4.4_circuitbreaking/</guid>
+      <description>Circuit Breaking Your Services Fault Injection lets you see how the service mesh behaves when there are failures in network calls to a specific service. But how do you protect a service if it has overloaded or failing instances serving traffic? Ideally, you would like to identify an instance that is failing and prevent clients from connecting to it once it meets a certain threshold.
+In OpenShift, an instance is equivalent to a Kubernetes pod running the microservice.</description>
+    </item>
+    
+    <item>
+      <title>Deploying an App</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab1.3_deploymsa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab1.3_deploymsa/</guid>
+      <description>Deploying an App into the Service Mesh It&#39;s time to deploy your microservices application. The application you are working on is a paste board application in which users can post comments in shared boards. Here is a diagram of the architecture:
+
+App Architecture
+The microservices include single sign-on (SSO), user interface (UI), the boards application, and the context scraper. In this scenario, you are going to deploy these services and then add a new user profile service.</description>
+    </item>
+    
+    <item>
+      <title>Fault Injection</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab4.3_faultinjection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab4.3_faultinjection/</guid>
+      <description>Testing Resiliency with Fault Injection Your application is working great now with the new version of the user profile service. But the previous version caused performance issues, and future updates may cause issues in other areas of the application. How can you test how your application behaves when a failure occurs?
+You need a way to simulate failure in the service mesh. By doing so, you can test if your application functions correctly in a degraded state.</description>
+    </item>
+    
+    <item>
+      <title>Feature Update</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab3.1_featureupdate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab3.1_featureupdate/</guid>
+      <description>Digging into Observability Istio provides additional capabilities to analyze the service mesh and its performance. Let&#39;s deploy a new version of the user profile service and analyze its effect on the service mesh.
+Feature Update The profile page returns basic information about the user. Let&#39;s add a feature update to show a profile photo on the profile page.
+The code has already been written for you on the &#39;workshop_feature_update&#39; branch of the repo.</description>
+    </item>
+    
+    <item>
+      <title>Fin.</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/fin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/fin/</guid>
+      <description>That&#39;s it! Hopefully, these labs provided you some idea of why a service mesh is critical when developing and operating microservice applications. Istio is an emerging technology so keep checking the upstream announcements and blog for exciting news.
+Also, release notes are a great place to see changes that occurred between releases. You can find the OpenShift Service Mesh release notes here and the upstream Istio project release notes here.</description>
+    </item>
+    
+    <item>
+      <title>Grafana</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab3.2_grafana/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab3.2_grafana/</guid>
+      <description>Service Mesh Metrics with Grafana Grafana is a monitoring tool that can be integrated with Istio for metric observation. Using Grafana, you can look at metrics associated with services in your mesh. Let&#39;s use Grafana to get more information about the user profile service.
+Explore Grafana First, let&#39;s explore the Grafana user interface.
+  Open the Grafana console. Retrieve the endpoint for Grafana:  GRAFANA_CONSOLE=https://$(oc get routes grafana -n istio-system -o jsonpath=&#39;{.</description>
+    </item>
+    
+    <item>
+      <title>Installing Istio</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab1.2_installing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab1.2_installing/</guid>
+      <description>Installing Istio - the Easy Button You will conduct these labs in an OpenShift cluster. First, test you have access to your cluster via console and CLI.
+OpenShift   Navigate to the console URI provided by your instructor and login with the username/password provided.  For example:
+http://console-openshift-console.apps.cluster-naa-xxxx.naa-xxxx.example.opentlc.com  Once logged in, you should see the following:
+ OpenShift Welcome
+
+You will use the OpenShift &#39;oc&#39; CLI to execute commands for the majority of this lab.</description>
+    </item>
+    
+    <item>
+      <title>Jaeger</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab3.3_jaeger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab3.3_jaeger/</guid>
+      <description>Distributed Tracing with Jaeger Jaeger is a distributed tracing tool that lets you trace requests as they flow through your service mesh. This is incredibly useful for debugging performance issues in your microservices architecture.
+Explore Jaeger First, let&#39;s explore the Jaeger user interface.
+  Open the Jaeger console. Retrieve the endpoint for Jaeger:  JAEGER_CONSOLE=https://$(oc get routes jaeger -n istio-system -o jsonpath=&#39;{.spec.host}{&amp;quot;\n&amp;quot;}&#39;) echo $JAEGER_CONSOLE    Navigate to this URL in the browser.</description>
+    </item>
+    
+    <item>
+      <title>Kiali</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab2.3_kiali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab2.3_kiali/</guid>
+      <description>Introducing Kiali for Observability All of your microservices are running in the service mesh. Now, you need a way to visualize the service mesh topology. That is, what&#39;s running in your service mesh and how are they connected?
+Istio provides Kiali, an open source project that gives you a console view of your service mesh. You can inspect the health of your service mesh, and it has further integrations for metric querying and tracing that we will cover in later labs.</description>
+    </item>
+    
+    <item>
+      <title>Microservices</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab1.1_welcome/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab1.1_welcome/</guid>
+      <description>A Brief Introduction to Microservices Microservices, also known as the microservice architecture, is a software development technique that structures an application as a collection of loosely coupled services. Microservice architectures enable the continuous delivery/deployment/scaling of complex applications.
+Why microservices? Agility. Deliver application updates faster. Isolate and fix bugs easier. Done right, a microservices architecture will you help to meet several important non-functional requirements for your software:
+ scalability performance reliability resiliency extensibility availability  What is a Service Mesh?</description>
+    </item>
+    
+    <item>
+      <title>Routing Traffic</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab4.1_routingtraffic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab4.1_routingtraffic/</guid>
+      <description>Basics on Routing Traffic Through the Mesh One of Istio&#39;s core capabilities is the ability to dynamically control how services communicate without modifying the application code itself. The general concept is called Traffic Management. It allows you to do things such as A/B test, canary rollouts, rollbacks, and more.
+The two core API objects for traffic management are the Virtual Service and the Destination Rule. The destination rule is for the owner of a microservice - what versions do I expose and what happens to traffic before it reaches my service?</description>
+    </item>
+    
+    <item>
+      <title>Securing Ingress and Egress</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab5.4_secureingressegress/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab5.4_secureingressegress/</guid>
+      <description>Securing Ingress and Egress In cases where strict security is required we need to configure specifics around securing ingress and egress traffic. Security around egress is often used to lock down and deny access to potentially harmful resources outside the network. Additionally, it is a good practice to prevent malicious activities from originating from the cluster.
+You are probably already familiar with basic ingress security concepts. Essentially, only exposing particular services to be accessible from outside the cluster and using basic TLS/SSL.</description>
+    </item>
+    
+    <item>
+      <title>Traffic Splitting</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab4.2_trafficsplitting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab4.2_trafficsplitting/</guid>
+      <description>Splitting Traffic Amongst Service Versions It&#39;s time to fix the performance issue of the application. Previously, you deployed a new version of the application and routed 100% of traffic to the new version. This time, you&#39;ll use Istio traffic routing to do canary rollouts and split traffic.
+Feature Fix The code to fix the performance issue of the user profile service has already been written for you on the &#39;workshop_feature_fix&#39; branch.</description>
+    </item>
+    
+    <item>
+      <title>Verifying mTLS</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab5.2_verifymtls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab5.2_verifymtls/</guid>
+      <description>Checking and Verification of mTLS OK, now that all our services are encrypting traffic Let&#39;s take a look in Kiali to see our encryption setup.
+  Open up the dashboard to Kiali (if you don&#39;t already have it open) and navigate to the Graph view. In the first drop down select the &#34;Service graph&#34; and in the &#34;Display&#34; drop down make sure the &#34;Security&#34; check box is checked.  You should see something like this screenshot with little locks indicating that mTLS is working for service-to-service communication.</description>
+    </item>
+    
+    <item>
+      <title>mTLS</title>
+      <link>http://redhatgov.io/workshops/openshift_service_mesh/lab5.1_intromtls/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://redhatgov.io/workshops/openshift_service_mesh/lab5.1_intromtls/</guid>
+      <description>Mutual TLS One of the key features of the Service Mesh is its ability to bring additional security to your applications. It does this in a several different ways that will be explored in the next few labs. The first of which is a concept known as &amp;quot;Mutual TLS&amp;quot; or mTLS for short.
+Imagine a scenario where you are deploying a microservices application and are expecting a lot of PII to flow between the services.</description>
+    </item>
+    
+  </channel>
+</rss>
